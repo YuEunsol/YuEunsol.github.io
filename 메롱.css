@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+#headerBackgroundBox {
+    background-color: #3a5390;
+    width: 100%;
+}
+#headerName {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+}
+.Drop {
+    width: 20vw;
+    height: 14vh;
+    line-height: 14vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1.1rem;
+    font-size: 1.6rem;
+    font-family: S-CoreDream-3Light;
+}
+#p1 {
+    margin-left: 80vw;
+}
+#p2 {
+    margin-left: 60vw;
+}
+#p3 {
+    margin-left: 40vw;
+}
+#p4 {
+    margin-left: 20vw;
+}
+
+.TrapezoidBackground {
+    width: 0;
+    height: 0;
+    border-bottom: 30vw solid #3a5390;
+    border-left: 100vw solid transparent;
+    position: relative;
+}
+
+.TrapezoidBackground:after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 30vw;
+    background-color: #3a5390;
+    position: absolute;
+    top: 30vw;
+    right: 0;
+}
+
+@media ( max-width: 1440px) {
+    #headerBackgroundBox {
+        height: 30vh;
+    }
+    #headerName {
+        font-size: 15vh;
+        bottom: 64vh;
+        left: 13vw;
+    }
+}
+@media ( max-width: 740px) {
+    #headerBackgroundBox {
+        height: 30vh;
+    }
+    #headerName {
+        font-size: 10vh;
+        bottom: 65vh;
+        left: 10vw;
+    }
+}
