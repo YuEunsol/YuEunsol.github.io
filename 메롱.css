@@ -15,7 +15,8 @@ body::-webkit-scrollbar {
 }
 #headerBackgroundBox {
     background-color: #3a5390;
-    width: 100%;
+    width: 100vw;
+    height: 30vh;
 }
 #headerName {
     font-family: 'Quicksand', sans-serif;
@@ -23,7 +24,7 @@ body::-webkit-scrollbar {
     margin: 0;
     position: absolute;
 }
-.Drop {
+.Dropline {
     width: 20vw;
     height: 14vh;
     line-height: 14vh;
