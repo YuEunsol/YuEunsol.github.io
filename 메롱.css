@@ -9,6 +9,7 @@ body {
     margin: 0;
     font-size: 10px;
     -ms-overflow-style: none;
+    overflow-x:hidden;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -24,21 +25,32 @@ body::-webkit-scrollbar {
     margin: 0;
     position: absolute;
 }
+
 .Dropline {
     width: 20vw;
     height: 14vh;
-    line-height: 14vh;
     margin: 0;
     display: flex;
     justify-content: center;
-    letter-spacing: 1.1rem;
-    font-size: 1.6rem;
+    align-items: center;
+    letter-spacing: 2vw;
+    font-size: 4vw;
     font-family: S-CoreDream-3Light;
+    position: relative;
 }
+
+.Dropline:first-child {
+    width: auto;
+}
+.Drop {
+}
+
 #p1 {
-    margin-left: 80vw;
+    float: right;
+    text-align-last: end;
 }
 #p2 {
+    clear: right;
     margin-left: 60vw;
 }
 #p3 {
@@ -48,23 +60,22 @@ body::-webkit-scrollbar {
     margin-left: 20vw;
 }
 
-.TrapezoidBackground {
+.TrapezoidBackgroundTriangle {
     width: 0;
     height: 0;
     border-bottom: 30vw solid #3a5390;
     border-left: 100vw solid transparent;
-    position: relative;
 }
 
-.TrapezoidBackground:after {
-    content: "";
-    display: block;
+.TrapezoidBackgroundSquare {
     width: 100vw;
     height: 30vw;
     background-color: #3a5390;
+
+}
+.TrapezoidBackground {
+    z-index: -1;
     position: absolute;
-    top: 30vw;
-    right: 0;
 }
 
 @media ( max-width: 1440px) {

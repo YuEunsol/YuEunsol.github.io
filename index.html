@@ -49,15 +49,32 @@
         </div>
     </div>
     <div class="TrapezoidBackground">
+        <div class="TrapezoidBackgroundTriangle"></div>
+        <div class="TrapezoidBackgroundSquare"></div>
     </div>
-    <p id="Trapeozid">Welcome to My Webpage!!</p>
+<!--    <p id="Trapeozid">Welcome to My Webpage!!</p>-->
 <script>
-    let p1 = document.querySelector('#p1').getBoundingClientRect();
+    let trapeozidBackgrond_bottom_height = document.querySelector('.TrapezoidBackgroundSquare').getBoundingClientRect().bottom;
+    let header_height = document.querySelector('#headerBackgroundBox').getBoundingClientRect().height;
+    let dropLine_height = document.querySelector('.Drop').getBoundingClientRect().height;
+    let p1_height = document.querySelector('#p1').getBoundingClientRect().y;
+    let drop = document.querySelectorAll('#p1 > .Drop');
+    console.log(trapeozidBackgrond_bottom_height);
+
     window.addEventListener('scroll', function(e){
-        if (window.scrollY >= p1.y) {
-            console.log('도달');
+        if (window.scrollY >= p1_height) {
+            for (let i = 0; i < drop.length; i++) {
+                setInterval(function (w){
+                drop[i].style.color = "red";
+                drop[i].style.position = 'absolute';
+                drop[i].style.top = String(trapeozidBackgrond_bottom_height - header_height - dropLine_height) + 'px';
+                //     drop[i].style.top = '700px';
+                console.log(trapeozidBackgrond_bottom_height);
+                }, 1000 * (Math.random() * 5));
+            }
         }
     })
+
 
 </script>
 </body>
