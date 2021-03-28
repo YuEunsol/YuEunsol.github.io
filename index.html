@@ -60,19 +60,21 @@
     let p1_height = document.querySelector('#p1').getBoundingClientRect().y;
     let drop = document.querySelectorAll('#p1 > .Drop');
     console.log(trapeozidBackgrond_bottom_height);
-
     window.addEventListener('scroll', function(e){
         if (window.scrollY >= p1_height) {
             for (let i = 0; i < drop.length; i++) {
-                setInterval(function (w){
-                drop[i].style.color = "red";
-                drop[i].style.position = 'absolute';
-                drop[i].style.top = String(trapeozidBackgrond_bottom_height - header_height - dropLine_height) + 'px';
-                //     drop[i].style.top = '700px';
-                console.log(trapeozidBackgrond_bottom_height);
-                }, 1000 * (Math.random() * 5));
+                let randomFloat = Math.random();
+                let randomColorCode = "#" + Math.round(randomFloat * 0xFFFFFF).toString(16);
+                let dropInterval = setInterval(function (w) {
+                    drop[i].style.color = randomColorCode;
+                    // drop[i].style.position = 'absolute';
+                    // drop[i].style.top = String(trapeozidBackgrond_bottom_height - header_height - dropLine_height) + 'px';
+                    clearInterval(dropInterval);
+
+                }, 1000 * (randomFloat * 6));
+                }
             }
-        }
+
     })
 
 
