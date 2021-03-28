@@ -52,6 +52,12 @@
     </div>
     <p id="Trapeozid">Welcome to My Webpage!!</p>
 <script>
+    let p1 = document.querySelector('#p1').getBoundingClientRect();
+    window.addEventListener('scroll', function(e){
+        if (window.scrollY >= p1.y) {
+            console.log('도달');
+        }
+    })
 
 </script>
 </body>
