@@ -10,3 +10,4 @@
 - [ ] JS에 DropLine 다 추가
 - [ ] JS function(e) 코드 최적화
 - [ ] #Trapeozid 위치 조정
+- [ ] dropInterval stop function 수정
