@@ -39,7 +39,10 @@ body::-webkit-scrollbar {
     position: relative;
 }
 
-.Dropline:first-child {
+.Dropline:first-child{
+    width: auto;
+}
+.Dropline:last-child {
     width: auto;
 }
 .Drop {
@@ -60,6 +63,10 @@ body::-webkit-scrollbar {
     margin-left: 20vw;
 }
 
+#p5 {
+    display: inline-block;
+}
+
 .TrapezoidBackgroundTriangle {
     width: 0;
     height: 0;
@@ -78,7 +85,7 @@ body::-webkit-scrollbar {
     position: absolute;
 }
 
-#Trapeozid {
+#Trapezoid {
     margin-top: 17.5vh;
     margin-left: 20vw;
     color: white;
@@ -88,9 +95,9 @@ body::-webkit-scrollbar {
 
 @media ( orientation: landscape) {
     #headerName {
-        font-size: 11vh;
+        font-size: 14vh;
         bottom: 64vh;
-        left: 13vw;
+        left: 15vw;
     }
 }
 @media ( orientation: portrait) {
