@@ -52,31 +52,27 @@
         <div class="TrapezoidBackgroundTriangle"></div>
         <div class="TrapezoidBackgroundSquare"></div>
     </div>
-<!--    <p id="Trapeozid">Welcome to My Webpage!!</p>-->
+    <p id="Trapeozid">Welcome to My Webpage!!</p>
 <script>
-    let trapeozidBackgrond_bottom_height = document.querySelector('.TrapezoidBackgroundSquare').getBoundingClientRect().bottom;
-    let header_height = document.querySelector('#headerBackgroundBox').getBoundingClientRect().height;
-    let dropLine_height = document.querySelector('.Drop').getBoundingClientRect().height;
+    let viewport_height = window.innerHeight;
+    let viewport_width = window.innerWidth;
     let p1_height = document.querySelector('#p1').getBoundingClientRect().y;
     let drop = document.querySelectorAll('#p1 > .Drop');
-    console.log(trapeozidBackgrond_bottom_height);
+    let dropChecker = false;
     window.addEventListener('scroll', function(e){
-        if (window.scrollY >= p1_height) {
+        if (window.scrollY >= p1_height && !dropChecker) {
             for (let i = 0; i < drop.length; i++) {
                 let randomFloat = Math.random();
                 let randomColorCode = "#" + Math.round(randomFloat * 0xFFFFFF).toString(16);
-                let dropInterval = setInterval(function (w) {
-                    drop[i].style.color = randomColorCode;
-                    // drop[i].style.position = 'absolute';
-                    // drop[i].style.top = String(trapeozidBackgrond_bottom_height - header_height - dropLine_height) + 'px';
-                    clearInterval(dropInterval);
-
-                }, 1000 * (randomFloat * 6));
+                drop[i].style.color = randomColorCode;
+                setInterval(function (w) {
+                    drop[i].style.position = 'relative';
+                    drop[i].style.top = '130vh';
+                }, 1000 * randomFloat);
                 }
+            dropChecker = true;
             }
-
     })
-
 
 </script>
 </body>
