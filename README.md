@@ -16,3 +16,4 @@
 - [ ] media query orientation 모바일 테스트
 - [ ] #Trapezoid 기울기 수정
 - [ ] #Trapezoid .Drop .TrapezoidBackground z-index 수정
+- [x] #p5 왼쪽 공백 삭제 (2021/03/30)
