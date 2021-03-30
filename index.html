@@ -67,11 +67,13 @@
                 drop[i].style.color = randomColorCode;
                 setInterval(function (w) {
                     drop[i].style.position = 'relative';
-                    drop[i].style.top = '130vh';
-                }, 1000 * randomFloat);
+                    drop[i].classList.add("drop_ani");
+                }, 900 * randomFloat);
                 }
             dropChecker = true;
+
             }
+
     })
 
 </script>

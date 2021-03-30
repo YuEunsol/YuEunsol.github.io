@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'S-CoreDream-3Light';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
@@ -67,6 +68,12 @@ body::-webkit-scrollbar {
     display: inline-block;
 }
 
+.drop_ani {
+    transform: translateY(130vh);
+    transition-property: all;
+    transition-duration: 2s;
+}
+
 .TrapezoidBackgroundTriangle {
     width: 0;
     height: 0;
@@ -90,7 +97,6 @@ body::-webkit-scrollbar {
     margin-left: 20vw;
     color: white;
     transform-origin: 50% 50%;
-
 }
 
 @media ( orientation: landscape) {
