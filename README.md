@@ -21,6 +21,8 @@
 - [ ] calc(vh/vw) 안됨 분석
 - [ ] calc -> deg 방법 분석
 - [x] css transition <-> js scrollEvent 연동 (2021/03/30)
+- [ ] Dropline 색상 바꾸기
+- [ ] 튕기는 애니메이션
 
 
 #### 레이아웃 설계
