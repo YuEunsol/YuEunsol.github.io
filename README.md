@@ -2,7 +2,7 @@
 
 
 
-#### 추가 할 것
+#### 할 것
 
 - [x] headerName 폰트 사이즈 매끄럽게 (2021/03/30)
 - [x] 반응형 size 정하기 (2021/03/30)
@@ -17,3 +17,7 @@
 - [ ] #Trapezoid 기울기 수정
 - [ ] #Trapezoid .Drop .TrapezoidBackground z-index 수정
 - [x] #p5 왼쪽 공백 삭제 (2021/03/30)
+- [ ] 가끔 scroll 빠르게/ 느리게 내릴 시 Dropline 위치 오류나는거 원인 분석
+
+
+#### 레이아웃 설계
