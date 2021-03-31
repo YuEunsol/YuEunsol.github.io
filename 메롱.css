@@ -69,9 +69,30 @@ body::-webkit-scrollbar {
 }
 
 .drop_ani {
-    transform: translateY(130vh);
-    transition-property: all;
-    transition-duration: 2s;
+    /*transform: translateY(130vh);*/
+    /*transition-property: all;*/
+    /*transition-duration: 2s;*/
+    animation: bounce_ani 2s ease-in ;
+}
+
+@keyframes bounce_ani {
+    25% {
+        top: -4vh;
+        left: -0.7vh;
+
+    }
+    50% {
+        top: -10vh;
+        left: -1.5vh;
+    }
+    75% {
+        top: -4vh;
+        left: -2.4vh;
+    }
+    100% {
+        top: 0vh;
+        left: -3vh;
+    }
 }
 
 .TrapezoidBackgroundTriangle {
@@ -94,7 +115,7 @@ body::-webkit-scrollbar {
 
 #Trapezoid {
     margin-top: 17.5vh;
-    margin-left: 20vw;
+    display: block;
     color: white;
     transform-origin: 50% 50%;
 }

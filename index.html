@@ -59,6 +59,7 @@
     let p1_height = document.querySelector('#p1').getBoundingClientRect().y;
     let drop = document.querySelectorAll('#p1 > .Drop');
     let dropChecker = false;
+    let Bounce5vh_ani_class = "bounce5vh_ani"
     window.addEventListener('scroll', function(e){
         if (window.scrollY >= p1_height && !dropChecker) {
             for (let i = 0; i < drop.length; i++) {
@@ -71,7 +72,6 @@
                 }, 900 * randomFloat);
                 }
             dropChecker = true;
-
             }
 
     })
