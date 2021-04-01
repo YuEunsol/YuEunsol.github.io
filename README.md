@@ -29,6 +29,27 @@
 - [ ] 애니메이션 끝난 후 자리 고정
 - [ ] bounce_ani drop마다 다르게 랜덤 추가
 - [ ] drop_ani랑 bounce_ani 시간텀 두기
+- [ ] Dropline 그림자 이쁜지 test
+- [ ] Dropline 떨어질 때 bold 이쁜지 test
+- [ ] 
 
 
 #### 레이아웃 설계
+
+
+
+#### 참고
+
+https://brunch.co.kr/@99-life/5
+https://doolyit.tistory.com/202
+css 애니메이션 매끄러운 움직임 Cubic-bezier
+
+https://clarle.github.io/yui3/yui/docs/anim/curve.html
+jQuery 곡선 패스
+
+https://rgy0409.tistory.com/3890
+css animation 마지막 상태 유지
+
+
+
+
