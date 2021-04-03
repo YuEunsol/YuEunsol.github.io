@@ -13,7 +13,7 @@
 - [x] dropInterval stop function 수정 (2021/03/29)
 - [ ] #Trapezoid 반응형에 따른 각도 계산
 - [x] DropLine 떨어지는 애니메이션 추가 (2021/03/30)
-- [ ] media query orientation 모바일 테스트
+- [x] media query orientation 모바일 테스트 (2021/04/03)
 - [ ] #Trapezoid 기울기 수정
 - [ ] #Trapezoid .Drop .TrapezoidBackground z-index 수정
 - [ ] #p5 왼쪽 공백 삭제 (display: inline-block 안됨 상하 간격 안맞음)
@@ -34,9 +34,21 @@
 - [ ] Dropline 튕기는 효과 각개설정
 - [ ] @keyframes 유형 추가
 - [ ] @keyframes 이름 바꾸기
+- [ ] git repository 옮기기
+- [ ] Dropline 튕길 때 기울어짐
+- [ ] 모바일 .bounce_ani 때 사라짐 수정
+- [ ] 모바일 폰트 사이즈 수정
+- [ ] 모바일 #HeaderName 사이즈 및 위치 수정
+- [ ] @media 세로 모바일 데탑 나누기
+
+
+
 
 
 #### 레이아웃 설계
+
+
+
 
 
 
@@ -73,6 +85,10 @@ https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Animations/Using_CSS_animation
 
 css animation 설명(eventlistener)
 
+https://zeddios.tistory.com/5
+
+
+git repository  옮기기
 
 
 
