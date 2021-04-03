@@ -32,7 +32,8 @@
 - [ ] Dropline 그림자 이쁜지 test
 - [ ] Dropline 떨어질 때 bold 이쁜지 test
 - [ ] Dropline 튕기는 효과 각개설정
-- [ ] Drop 유형 더 추가
+- [ ] @keyframes 유형 추가
+- [ ] @keyframes 이름 바꾸기
 
 
 #### 레이아웃 설계
