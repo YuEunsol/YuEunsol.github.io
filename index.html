@@ -54,12 +54,9 @@
     </div>
     <p id="Trapezoid">Welcome to My Webpage!!</p>
 <script>
-    let viewport_height = window.innerHeight;
-    let viewport_width = window.innerWidth;
     let p1_height = document.querySelector('#p1').getBoundingClientRect().y;
     let drop = document.querySelectorAll('#p1 > .Drop');
     let dropChecker = false;
-    let Bounce5vh_ani_class = "bounce5vh_ani"
     window.addEventListener('scroll', function(e){
         if (window.scrollY >= p1_height && !dropChecker) {
             for (let i = 0; i < drop.length; i++) {
@@ -67,9 +64,11 @@
                 let randomColorCode = "#" + Math.round(randomFloat * 0xFFFFFF).toString(16);
                 drop[i].style.color = randomColorCode;
                 setInterval(function (w) {
-                    drop[i].style.position = 'relative';
                     drop[i].classList.add("drop_ani");
                 }, 900 * randomFloat);
+                let bounceTimeout = setTimeout(function () {
+                    drop[i].classList.toggle("bounce_ani");
+                },2000);
                 }
             dropChecker = true;
             }

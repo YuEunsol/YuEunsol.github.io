@@ -69,30 +69,62 @@ body::-webkit-scrollbar {
 }
 
 .drop_ani {
-    /*transform: translateY(130vh);*/
-    /*transition-property: all;*/
-    /*transition-duration: 2s;*/
-    animation: bounce_ani 2s ease-in ;
+    position:relative;
+    transform: translateY(130vh);
+    transition-property: all;
+    transition-duration: 2s;
 }
 
-@keyframes bounce_ani {
-    25% {
-        top: -4vh;
-        left: -0.7vh;
+.bounce_ani {
+    top: 130vh;
+    animation: 2s undefined-easeInBounce forwards;
+}
 
+@keyframes undefined-easeInBounce {
+    0% {
+        transform: translate(0%, 0%);
     }
-    50% {
-        top: -10vh;
-        left: -1.5vh;
+
+    3% {
+        transform: translate(-32%, -160%);
     }
-    75% {
-        top: -4vh;
-        left: -2.4vh;
+
+    4% {
+        transform: translate(-36%, -142%);
     }
+
+    8% {
+        transform: translate(-41%, -90%);
+    }
+
+    18% {
+        transform: translate(-45%, -3%);
+    }
+
+    26% {
+        transform: translate(-90%, -40%);
+    }
+
+    46% {
+        transform: translate(-126%, -3%);
+    }
+
+    64% {
+        transform: translate(-136%,-10%);
+    }
+
+    76% {
+        transform: translate(-167%, -0.66%);
+    }
+
+    88% {
+        transform: translate(-176%, -1%);
+    }
+
     100% {
-        top: 0vh;
-        left: -3vh;
+        transform: translate(-180%, 0%);
     }
+
 }
 
 .TrapezoidBackgroundTriangle {
