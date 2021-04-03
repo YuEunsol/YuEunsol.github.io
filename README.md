@@ -22,16 +22,17 @@
 - [ ] calc -> deg 방법 분석
 - [x] css transition <-> js scrollEvent 연동 (2021/03/30)
 - [ ] Dropline 색상 바꾸기 (파스텔 톤)
-- [ ] 튕기는 애니메이션
+- [x] 튕기는 애니메이션 (2021/04/03)
 - [ ] 아래로 떨어질 때 width 살짝 늘어나는 애니메이션 추가
-- [ ] bounce_ani 매끄럽게 하는 방법 분석
-- [ ] 떨어지는 유형 나눠서 할지 함수로 할지 결정
-- [ ] 애니메이션 끝난 후 자리 고정
+- [x] bounce_ani 매끄럽게 하는 방법 분석 (2021/04/03)
+- [x] 떨어지는 유형 나눠서 할지 함수로 할지 결정 (2021/04/03 -> 일단 유형별로)
+- [x] 애니메이션 끝난 후 자리 고정 (2021/04/03)
 - [ ] bounce_ani drop마다 다르게 랜덤 추가
-- [ ] drop_ani랑 bounce_ani 시간텀 두기
+- [x] drop_ani랑 bounce_ani 시간텀 두기 (2021/04/03)
 - [ ] Dropline 그림자 이쁜지 test
 - [ ] Dropline 떨어질 때 bold 이쁜지 test
-- [ ] 
+- [ ] Dropline 튕기는 효과 각개설정
+- [ ] Drop 유형 더 추가
 
 
 #### 레이아웃 설계
@@ -49,6 +50,16 @@ jQuery 곡선 패스
 
 https://rgy0409.tistory.com/3890
 css animation 마지막 상태 유지
+
+https://webclub.tistory.com/481
+css transition 자세한 설명
+
+https://ko.javascript.info/settimeout-setinterval
+js setInterval setTimeout 설명
+
+https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+css animation 설명(eventlistener)
+
 
 
 
