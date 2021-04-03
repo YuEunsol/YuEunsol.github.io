@@ -44,21 +44,33 @@
 
 https://brunch.co.kr/@99-life/5
 https://doolyit.tistory.com/202
+
+
 css 애니메이션 매끄러운 움직임 Cubic-bezier
 
 https://clarle.github.io/yui3/yui/docs/anim/curve.html
+
+
 jQuery 곡선 패스
 
 https://rgy0409.tistory.com/3890
+
+
 css animation 마지막 상태 유지
 
 https://webclub.tistory.com/481
+
+
 css transition 자세한 설명
 
 https://ko.javascript.info/settimeout-setinterval
+
+
 js setInterval setTimeout 설명
 
 https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+
+
 css animation 설명(eventlistener)
 
 
