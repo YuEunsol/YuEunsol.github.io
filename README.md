@@ -34,7 +34,7 @@
 - [ ] Dropline 튕기는 효과 각개설정
 - [ ] @keyframes 유형 추가
 - [ ] @keyframes 이름 바꾸기
-- [ ] git repository 옮기기
+- [x] git repository 옮기기 (2021/04/10) (태훈왕자님이 해주심)
 - [ ] Dropline 튕길 때 기울어짐
 - [ ] 모바일 .bounce_ani 때 사라짐 수정
 - [ ] 모바일 폰트 사이즈 수정
