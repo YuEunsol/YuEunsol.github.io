@@ -40,6 +40,8 @@
 - [ ] 모바일 폰트 사이즈 수정
 - [ ] 모바일 #HeaderName 사이즈 및 위치 수정
 - [ ] @media 세로 모바일 데탑 나누기
+- [ ] scss는 뭐지
+- [ ] node는 뭐지 
 
 
 
@@ -48,6 +50,8 @@
 #### 레이아웃 설계
 
 
+#### 오늘의 한 마디
+2021/04/14 dom 공부하다 프레임워크 공부하고 리액트 알아보고 뷰 알아보고 타입스크립트 프레임워크 장단점 자바스크립트 클린 코드 짜는법 깃 이슈 ... 등등 서핑 좀 즐겼다 뇌가 터질고 같당 결국 react typescript 이렇게 써보기로 했다 일단 환경 빌드부터 해야게따.....저거 위에 것들은 언제 다하지 그리고 개발 블로그 쓰고 싶은데 어디걸로 만들지 고민 중이다 후보는 티스토리 그리고 간혹 코드가 실행되는 블로그가 있던데..?!! 그것도 후보
 
 
 
@@ -89,6 +93,26 @@ https://zeddios.tistory.com/5
 
 
 git repository  옮기기
+
+https://imraccoon-developer.tistory.com/11
+
+
+TypeScript 장단점
+
+https://typescript-kr.github.io/
+
+
+TypeScript handBook
+
+https://violetboralee.medium.com/react-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-webstorm-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-d4f2121909b0
+
+
+react webstorm plug-in
+
+https://ojava.tistory.com/152
+
+
+react 개발 환경 구축
 
 
 
