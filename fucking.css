@@ -147,9 +147,11 @@ body::-webkit-scrollbar {
 
 #Trapezoid {
     margin-top: 17.5vh;
-    display: block;
+    display: flex;
+    justify-content: center;
     color: white;
     transform-origin: 50% 50%;
+
 }
 
 @media ( orientation: landscape) {
@@ -159,6 +161,18 @@ body::-webkit-scrollbar {
         left: 15vw;
     }
 }
+
+@media ( orientation: portrait) and (max-width: 400px){
+    #headerName {
+        font-size: 10vh;
+        top: 22vh;
+        left: 10vw;
+    }
+    .Dropline {
+        font-size: 3vh;
+    }
+}
+
 @media ( orientation: portrait) {
     #headerName {
         font-size: 10vh;

@@ -58,6 +58,8 @@
     let p1_height = document.querySelector('#p1').getBoundingClientRect().y;
     let drop = document.querySelectorAll('#p1 > .Drop');
     let dropChecker = false;
+    let viewport_height = window.innerHeight
+    let viewport_width = window.innerWidth
     window.addEventListener('scroll', function(e){
         if (window.scrollY >= p1_height && !dropChecker) {
             for (let i = 0; i < drop.length; i++) {
@@ -73,8 +75,32 @@
                 }
             dropChecker = true;
             }
-
     })
+    let trapezoid = document.querySelector('#Trapezoid');
+    let trapezoid_tan = (viewport_height * 0.35) / viewport_width;
+    function figureTrapezoidDeg(tan) {
+        if (0 <= tan <= 0.268) {
+            return tan * 55.97;
+        } else if (0.268 < tan <= 0.577) {
+            return tan * 51.993;
+        } else if (0.577 < tan <= 1) {
+            return tan * 45;
+        } else if (1 < tan <= 1.191) {
+            return tan * 41.982;
+        } else if (1.191 < tan <= 1.428) {
+            return tan * 38.515;
+        } else if (1.428 < tan <= 1.732) {
+            return tan * 34.682;
+        } else if (1.732 < tan <= 2.144) {
+            return tan * 31.716;
+        }
+        }
+
+
+
+    let trapezoid_deg = 'rotate(-' + figureTrapezoidDeg(trapezoid_tan).toString() + 'deg)';
+    trapezoid.style.transform = trapezoid_deg;
+
 
 </script>
 </body>
