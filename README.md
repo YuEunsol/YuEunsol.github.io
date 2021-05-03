@@ -66,10 +66,33 @@
 
 2021/04/25 Dropline 간격을 맞추는 중인데 이게 좀 까다롭다... 나중에 텍스트 바꿀 걸 대비해서 어떤 텍스트가 들어가든 딱 5등분돼서 정렬됐음 좋겠는데 어떻게 해야될 지 모르겠다. 지금은 margin-left를 써서 자리를 잡아주었는데 이건 박스의 자리를 잡아준 것이기 때문에 텍스트가 너무 작거나(지금 #p5처럼) 하면 간격이 안맞는다. 왜냐면 #p1 과 #p5는 각자 양 끝에 붙어야 하고든~ 흠.. 그래서 justify-content: space-between 을 쓰고 싶은데 지금은 5개의 줄을 세로로 정렬해놔서 못쓴다. 구럼 어카냐 ㅋㅋ 그래서 지금 가로 정렬로 바꿀지... 다른 방법을 더 연구 해볼 지....... 고민주ㅜㅇㅇ.... 이러다 답 나오겠지 모 기울기도 어케 잘 했는데~^^
 
+2021/05/03 와 나 일주일동안 코딩 안했네 게으른 자식 ㅡ.,ㅡ 헤헤 앞으로 열심히 해야겠다^^!! 근데 생각해보니 justify-content: space-between도 박스 사이의 간격이 일정한거라 내가 원하는 대로 안될 듯. 내가 원하는 대로 하려면 1. 양 끝 텍스트(#p1, #p5)는 끝과 끝에 위치 2. 가운데 텍스트(#p3)는 한 가운데 위치 3. 나머지 텍스트(#p2, #p4)는 각각 #p1과 #p3/ #p3와 #p5의 중간 점의 가운데에 위치 해야 한다.... 그것도 반응형이니까 실시간으로 계산해서..ㅋ 실환가용용?? 빨리 다음 페이지로 넘어가고 싶은데 이거 못끝내면 찝찝해서 못넘어갈듯>< 일단 해보겠음... 아 그냥 가로정렬로 바꿔야 될 거 같은데 바꾸면 p1부터 p5 순서 바꿔야 되고요 ㅋㅋ 그래서 걍 순서는 그대로 가고 코드가 좀 더 고생하기로... 근데 잘돼가고 있긴 한데 갑자기 난 바본가? 싶당 table로 하면 되는거 아닌가? 아 근데 어려운 길 돌아가려고 이거 하는 거긴 한데...... 아 몰라 크로플 머거야징 ㅋ
+
+
+
+
+#### 시도 해본 것
+
+##### #p* 간격 맞추기
+- 각각 margin-left 설정하기 (텍스트 바꾸면 간격 안맞음)
+- Dropline: nth-child { width: auto } (내용이 가운데에 있지 않은 이상 중심점 찾을 수 없음)
+- #p1, #p5 margin을 (100vw - width) 값으로 설정하기 (생각해보니 이거 계산 어케하는데 calc? 근데 생각해보니 이거 width 박스 사이즈잖아....... width: initial 하면 되는곤강)
+- #p1, #p5 margin을 js를 이용하여 (100vw - width) 값으로 설정하기
+- #p1, #p5 width를 fit-content 로 설정하고 margin을 채우기 (#p5 -> good) (#p1 -> good too)
+- #p3 width를 fit-content로 설정하고 margin 채우기 (gooooood)
+- 가로 정렬로 바꿔야 할 듯.......
+- 가로 정렬로 바꾸고 1,3,5 각각 양 끝과 가운데 배치 후 between 설정
+- 가로 정렬로 바꾸고 flex-flow row-reverse로 설정
+- display inline-flex로 바꾸고 nowrap
+- #p3 가운데에 고정 후 1,2,3/ 3,4,5 따로 space-between 적용
+- 
 
 
 
 #### 참고
+
+<details>
+<summary> 링크 </summary>
 
 https://brunch.co.kr/@99-life/5
 https://doolyit.tistory.com/202
@@ -145,5 +168,41 @@ https://combatguri.tistory.com/entry/26-rotate-%ED%9A%8C%EC%A0%84%ED%95%98%EA%B8
 js rotate
 
 
+https://ipex.tistory.com/entry/CSS3-flex-Box-justifycontent-alignitems
 
 
+css justify-contents & align-items 정리
+
+https://chlolisher.tistory.com/33
+
+
+css flex 속성 정리 ( flex-direction / flex-wrap / flex-flow )
+
+https://chlolisher.tistory.com/18
+
+
+css justify-contents & align-items 정리 2
+
+https://lalacode.tistory.com/6
+
+
+css 선택자 정리
+
+https://jeonghwan-kim.github.io/dev/2020/03/09/flex.html
+
+
+css flex 자세한 총정리
+
+https://www.codingfactory.net/10372
+
+
+css !important 설명
+
+
+https://www.tabmode.com/homepage/flex-order.html#gsc.tab=0
+
+
+css flex order 
+
+
+</details>
