@@ -79,6 +79,7 @@
     let trapezoid = document.querySelector('#Trapezoid');
     let trapezoid_tan = (viewport_height * 0.35) / viewport_width;
     function figureTrapezoidDeg(tan) {
+        console.log(tan)
         if (0 <= tan <= 0.268) {
             return tan * 55.97;
         } else if (0.268 < tan <= 0.577) {
