@@ -34,14 +34,15 @@ body::-webkit-scrollbar {
     height: 70vh;
 }
 
+
 .Dropline {
     width: fit-content;
     height: 14vh;
     margin: 0;
     display: inline-flex;
     flex-flow: nowrap;
+    flex-basis: auto;
     align-items: center;
-    /*justify-content: flex-start;*/
     letter-spacing: 1.5vh;
     font-size: 4vh;
     font-family: S-CoreDream-3Light;
