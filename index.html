@@ -56,30 +56,55 @@
     <p id="Trapezoid">Welcome to My Webpage!!</p>
 <script>
     let p1_height = document.querySelector('#p1').getBoundingClientRect().y;
-    let drop = document.querySelectorAll('#p1 > .Drop');
-    let dropChecker = false;
+    let p2_height = document.querySelector('#p2').getBoundingClientRect().y;
+    let p3_height = document.querySelector('#p3').getBoundingClientRect().y;
+    let p4_height = document.querySelector('#p4').getBoundingClientRect().y;
+    let p5_height = document.querySelector('#p5').getBoundingClientRect().y;
+
+    let p1_drop = document.querySelectorAll('#p1 > .Drop');
+    let p2_drop = document.querySelectorAll('#p2 > .Drop');
+    let p3_drop = document.querySelectorAll('#p3 > .Drop');
+    let p4_drop = document.querySelectorAll('#p4 > .Drop');
+    let p5_drop = document.querySelectorAll('#p5 > .Drop');
+
+    let p1_dropChecker = false;
+    let p2_dropChecker = false;
+    let p3_dropChecker = false;
+    let p4_dropChecker = false;
+    let p5_dropChecker = false;
+
     let viewport_height = window.innerHeight
     let viewport_width = window.innerWidth
-    window.addEventListener('scroll', function(e){
-        if (window.scrollY >= p1_height && !dropChecker) {
-            for (let i = 0; i < drop.length; i++) {
-                let randomFloat = Math.random();
-                let randomColorCode = "#" + Math.round(randomFloat * 0xFFFFFF).toString(16);
-                drop[i].style.color = randomColorCode;
-                setInterval(function (w) {
-                    drop[i].classList.add("drop_ani");
-                }, 900 * randomFloat);
-                setTimeout(function () {
-                    drop[i].classList.toggle("bounce_ani");
-                },2000);
+
+    function dropEvent(height, drop, dropChecker) {
+        window.addEventListener('scroll', function(e){
+            if (window.scrollY >= height && !dropChecker) {
+                for (let i = 0; i < drop.length; i++) {
+                    let randomFloat = Math.random();
+                    let randomColorCode = "#" + Math.round(randomFloat * 0xFFFFFF).toString(16);
+                    drop[i].style.color = randomColorCode;
+                    setInterval(function (w) {
+                        drop[i].classList.add("drop_ani");
+                    }, 900 * randomFloat);
+                    // setTimeout(function () {
+                    //     drop[i].classList.toggle("bounce_ani");
+                    // },2000);
                 }
-            dropChecker = true;
+                dropChecker = true;
             }
-    })
+        })
+    }
+    dropEvent(p1_height,p1_drop,p1_dropChecker);
+    dropEvent(p2_height,p2_drop,p2_dropChecker);
+    dropEvent(p3_height,p3_drop,p3_dropChecker);
+    dropEvent(p4_height,p4_drop,p4_dropChecker);
+    dropEvent(p5_height,p5_drop,p5_dropChecker);
+
+
+
     let trapezoid = document.querySelector('#Trapezoid');
     let trapezoid_tan = (viewport_height * 0.35) / viewport_width;
     function figureTrapezoidDeg(tan) {
-        console.log(tan)
         if (0 <= tan <= 0.268) {
             return tan * 55.97;
         } else if (0.268 < tan <= 0.577) {
